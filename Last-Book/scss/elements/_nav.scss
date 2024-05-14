@@ -1,0 +1,42 @@
+@import "../generic/functions";
+@import "../generic/variables";
+
+%flex_align-center {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: rem(80px);
+  background: $color-main;
+  font-size: rem(30px);
+  @extend %flex_align-center;
+
+  .nav_box {
+    @extend %flex_align-center;
+    justify-content: space-around;
+  }
+}
+
+.counter_box {
+  width: rem(50px);
+  height: rem(50px);
+  background: aliceblue;
+  border-radius: rem(5px);
+  @extend %flex_align-center;
+  justify-content: center;
+}
+
+.user_box {
+  @extend %flex_align-center;
+  .user {
+    margin-right: rem(10px);
+  }
+  .user_avatar {
+    width: rem(50px);
+    height: rem(50px);
+    border-radius: 50%;
+    background: black;
+  }
+}
