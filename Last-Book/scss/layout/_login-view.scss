@@ -1,0 +1,31 @@
+@import "../generic/variables";
+@import "../generic/functions";
+
+.login-section {
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  margin-top: rem(50px);
+  width: rem(800px);
+  height: rem(300px);
+  background-color: lightgray;
+  border-radius: rem(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_text {
+  font-size: rem(22px);
+  &_h2 {
+    margin: rem(0px);
+    margin-bottom: rem(20px);
+  }
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,5 +1,11 @@
+//GENERIC
 @import "settings/normalize";
 @import "generic/variables";
+
+//ELEMENTS
 @import "elements/nav";
 @import "elements/base";
+
+//LAYOUTS
 @import "layout/welcome-view";
+@import "layout/login-view";
