@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import WelcomeLayout from "./layouts/WelcomeLayout";
+import LoginLayout from "./layouts/LoginLayout";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route path="/welcome" element={<WelcomeLayout />} />
-          <Route />
+          <Route path="/login" element={<LoginLayout />} />
           <Route />
           <Route path="*" element={<h1>Not Found</h1>} />
         </Route>
