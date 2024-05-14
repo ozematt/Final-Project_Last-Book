@@ -1,0 +1,47 @@
+@import "../generic/variables";
+@import "../generic/functions";
+
+.welcome-section {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome {
+  margin-top: rem(50px);
+  width: rem(800px);
+  height: rem(300px);
+  background-color: lightgray;
+  border-radius: rem(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome_text {
+  font-size: rem(22px);
+  &_h2 {
+    margin: rem(0px);
+  }
+  &_h3 {
+    margin: rem(0px);
+    margin-bottom: rem(20px);
+  }
+}
+
+.welcome_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_text_h3 {
+    margin-bottom: rem(0px);
+  }
+  &_btn {
+    width: rem(200px);
+    height: rem(30px);
+  }
+}
