@@ -16,7 +16,7 @@ const WelcomeLayout = () => {
           </form>
           <div className="welcome_login">
             <h3 className="welcome_login_text_h3">Masz profil ?</h3>
-            <Link to="/welcome/login">
+            <Link to="/login">
               <button className="welcome_login_btn">mam profil</button>
             </Link>
           </div>
