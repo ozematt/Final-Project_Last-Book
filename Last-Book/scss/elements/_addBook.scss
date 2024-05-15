@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  &_input {
+    position: relative;
+  }
 }
 
 .rating_input {
@@ -36,5 +39,19 @@
   .submit_btn {
     width: rem(100px);
     height: rem(50px);
+  }
+}
+
+.search-view {
+  width: rem(300px);
+  height: rem(80px);
+  border: 1px solid black;
+  position: absolute;
+  background: aliceblue;
+  top: rem(290px);
+  &_item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 }
