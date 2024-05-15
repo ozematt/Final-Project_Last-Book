@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const LoginLayout = () => {
   return (
     <section className="login-section wrapper">
-      <div className="login">
+      <div className="back-view">
         <div className="login_box">
           <div className="login_text">
             <h2 className="login_text_h2">Witaj ponownie!</h2>

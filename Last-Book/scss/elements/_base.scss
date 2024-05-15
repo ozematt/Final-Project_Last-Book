@@ -1,5 +1,5 @@
 @import "../generic/variables";
-
+@import "../generic/functions";
 * {
   box-sizing: border-box;
 }
@@ -12,7 +12,19 @@ a {
   text-decoration: none;
 }
 
-.wrapper{
+.wrapper {
   width: 1200px;
   margin: 0 auto;
+}
+
+//tło element - login, welcome
+.back-view {
+  margin-top: rem(50px);
+  width: rem(800px);
+  height: rem(300px);
+  background-color: lightgray;
+  border-radius: rem(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

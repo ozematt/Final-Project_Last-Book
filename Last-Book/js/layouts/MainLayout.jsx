@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
+import AddBook from "../AddBook";
 
 const MainLayout = () => {
   const [userName, setUserName] = useState("Name");
@@ -70,10 +71,10 @@ const MainLayout = () => {
           </div>
         </nav>
       </header>
-
+      <AddBook />
       {isLoggedIn === false ? (
         <section className="welcome-section wrapper">
-          <div className="welcome">
+          <div className="back-view">
             <div className="welcome_box">
               <div className="welcome_text">
                 <h2 className="welcome_text_h2">Cześć,</h2>

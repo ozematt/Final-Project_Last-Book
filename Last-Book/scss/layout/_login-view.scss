@@ -7,17 +7,6 @@
   width: 100%;
 }
 
-.login {
-  margin-top: rem(50px);
-  width: rem(800px);
-  height: rem(300px);
-  background-color: lightgray;
-  border-radius: rem(10px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .login_text {
   font-size: rem(22px);
   &_h2 {

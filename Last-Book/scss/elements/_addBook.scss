@@ -1,0 +1,40 @@
+@import "../generic/variables";
+@import "../generic/functions";
+
+.add-book {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.title_all {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rating_input {
+  width: rem(50px);
+  height: rem(50px);
+}
+
+.borrowed {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_section_left_part-two {
+  display: flex;
+}
+
+.form_section {
+  display: flex;
+  &_right {
+    display: flex;
+    flex-direction: column;
+  }
+  .submit_btn {
+    width: rem(100px);
+    height: rem(50px);
+  }
+}
