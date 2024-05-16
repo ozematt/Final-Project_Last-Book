@@ -6,6 +6,25 @@
   justify-content: center;
   width: 100%;
 }
+.add-book_box {
+  margin-top: rem(50px);
+  width: rem(800px);
+  height: rem(220px);
+  border-radius: rem(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.parent_relative {
+  position: relative;
+  .add-book_text {
+    position: absolute;
+    top: rem(-70px);
+    left: rem(-100px);
+  }
+}
 
 .title_all {
   display: flex;
@@ -16,10 +35,21 @@
   }
 }
 
+.title_input::placeholder {
+  font-size: rem(12px);
+}
+.title_input {
+}
+
 .rating_input {
-  width: rem(50px);
+  width: rem(40px);
   height: rem(25px);
   margin-left: rem(10px);
+}
+
+.rating_text {
+  font-size: rem(12px);
+  padding: 0 rem(10px);
 }
 
 .borrowed {
@@ -33,9 +63,11 @@
 
 .form_section {
   display: flex;
+  //position: relative;
   &_right {
     display: flex;
     flex-direction: column;
+    //position: absolute;
   }
   &_left {
     &_search {
@@ -43,18 +75,43 @@
     }
   }
   .submit_btn {
-    width: rem(100px);
+    width: rem(120px);
     height: rem(50px);
   }
 }
 
-.search-view {
-  width: rem(300px);
-  height: rem(80px);
-  border: 1px solid black;
+.borrowed_btn {
   position: absolute;
-  background: aliceblue;
-  top: rem(290px);
+  top: rem(75px);
+  width: rem(120px);
+  background: none;
+  border: 0.5px solid black;
+  border-radius: rem(3px);
+  font-size: rem(12px);
+}
+.borrowed_name {
+  position: absolute;
+  width: rem(120px);
+  top: rem(90px);
+}
+.borrowed_date {
+  position: absolute;
+  width: rem(120px);
+  top: rem(115px);
+}
+
+.check_input {
+  padding: rem(5px) 0;
+}
+
+.search-view {
+  width: rem(420px);
+  height: rem(150px);
+  border-radius: rem(3px);
+  position: absolute;
+
+  top: rem(-17px);
+  left: rem(-140px);
   &_item {
     list-style: none;
     margin: 0;
@@ -64,6 +121,6 @@
 
 .cover_search_img {
   background-color: black;
-  width: 10px;
-  height: 30px;
+  width: 80px;
+  height: 120px;
 }

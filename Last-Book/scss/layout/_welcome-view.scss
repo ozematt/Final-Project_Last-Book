@@ -21,6 +21,8 @@
 .welcome_form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  //justify-content: center;
 }
 
 .welcome_login {
@@ -34,4 +36,8 @@
     width: rem(200px);
     height: rem(30px);
   }
+}
+
+.input_add_user {
+  margin-top: rem(10px);
 }

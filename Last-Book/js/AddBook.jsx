@@ -4,6 +4,7 @@ import Book from "./Book";
 
 const AddBook = () => {
   //DATA
+
   //added book data
   const [book, setBook] = useState({
     bookData: {
@@ -21,7 +22,6 @@ const AddBook = () => {
   });
 
   //borrowed-section
-  const [borrowed, setBorrowed] = useState({});
 
   const [borrowedClick, setBorrowedClick] = useState(false);
   const [borrowedName, setBorrowedName] = useState("");
@@ -52,20 +52,6 @@ const AddBook = () => {
     } else {
       setChecked(false);
     }
-  };
-
-  const handleRatingChange = (e) => {
-    const value = e.target.value;
-    setRating(value);
-  };
-
-  const handleBorrowedNameChange = (e) => {
-    const value = e.target.value;
-    setBorrowedName(value);
-  };
-  const handleBorrowedDateChange = (e) => {
-    const value = e.target.value;
-    setBorrowedDate(value);
   };
 
   const handleBorrowedClick = (e) => {
@@ -111,8 +97,6 @@ const AddBook = () => {
               const cover = book.volumeInfo.imageLinks.smallThumbnail;
               setSearchedAuthors(authors);
               setCover(cover);
-              // console.log(cover);
-              // console.log(authors);
             }
           } else {
             setBooksView([]);
@@ -135,10 +119,11 @@ const AddBook = () => {
               className="search-view_item"
               key={index}
             >
-              <div className="cover_search_img">
-                <img src={cover} alt="" />
+              <div className="cover_search">
+                <img className="cover_search_img" src={cover} alt="" />
+
+                {book.length > 25 ? `${book.substring(0, 25)}...` : book}
               </div>
-              {book.length > 25 ? `${book.substring(0, 25)}...` : book}
             </li>
           ))}
         </ul>
@@ -169,85 +154,124 @@ const AddBook = () => {
         date: borrowedDate,
       },
     });
+
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(book),
+    };
+
+    fetch("http://localhost:3000/books", requestOptions)
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Błąd:", error));
+
+    setSearchTerm("");
+    setRating(0);
+    setSearchedAuthors([]);
   };
   console.log(book);
 
   //UI
   return (
-    <div className="wrapper add-book">
-      <div className="back-view ">
-        <div>
-          <h2>Dodaj książke:</h2>
-          <form className="form_section" onSubmit={handleSubmit}>
-            {/* pierwsza sekcja*/}
-            <section className="form_section_left">
-              <div className="form_section_left_search">
-                <div className="title_all">
-                  <label>
-                    <input
-                      className="title_input"
-                      type="text"
-                      placeholder="wprowadż tytuł"
-                      value={searchTerm}
-                      onChange={handleSearch}
-                    />
-                  </label>
-                  {/*search title window*/}
-                  {searchTerm ? searchWindow() : null}
-                </div>
-                <div className="form_section_left_part-two">
-                  <label className="rating_text">
-                    <input
-                      type="number"
-                      name="rating"
-                      value={rating}
-                      onChange={handleRatingChange}
-                      className="rating_input"
-                    />
-                    jak oceniasz?
-                  </label>
-                </div>
-              </div>
-              <Book book={book} />
-            </section>
-            {/*druga sekcja*/}
-            <section className="form_section_right">
-              <input type="submit" value="+" className="submit_btn" />
-              <label>
-                <input
-                  type="checkbox"
-                  value="checked"
-                  onClick={handleCheckChange}
-                />
-                {!checked ? "posiadasz?" : "posiadam"}
-              </label>
-
-              {checked ? (
-                <button onClick={handleBorrowedClick} value={borrowedClick}>
-                  {!borrowedClick ? "pożyczone?" : "pożyczone"}
-                </button>
-              ) : null}
-              {borrowedClick ? (
-                <div className="borrowed">
-                  <input
-                    type="text"
-                    value={borrowedName}
-                    placeholder="komu przyczyłeś"
-                    onChange={handleBorrowedNameChange}
-                  />
-                  <input
-                    type="date"
-                    value={borrowedDate}
-                    placeholder="kiedy"
-                    onChange={handleBorrowedDateChange}
-                  />
-                </div>
-              ) : null}
-            </section>
-          </form>
+    <>
+      {/*LISTA*/}
+      <div className="wrapper list">
+        <div className="back-view flex_ma">
+          <h2>Lista:</h2>
+          <Book book={book} />
         </div>
       </div>
-    </div>
+      {/*DODAWANIE KSIAŻKI */}
+      <div className="wrapper add-book">
+        <div className="add-book_box">
+          <div className="parent_relative">
+            <h2 className="add-book_text">Dodaj książke:</h2>
+            <form className="form_section" onSubmit={handleSubmit}>
+              {/* pierwsza sekcja*/}
+              <section className="form_section_left">
+                <div className="form_section_left_search">
+                  <div className="title_all">
+                    <label>
+                      <input
+                        className="title_input"
+                        type="text"
+                        placeholder="wprowadż tytuł"
+                        value={searchTerm}
+                        onChange={handleSearch}
+                      />
+                    </label>
+                    <label>
+                      <p onChange={handleSearch}>autor:{searchedAuthors}</p>
+                    </label>
+                    {/*search title window*/}
+                    {searchTerm ? searchWindow() : null}
+                  </div>
+                  <div className="form_section_left_part-two">
+                    <label>
+                      <input
+                        type="number"
+                        name="rating"
+                        value={rating}
+                        onChange={(e) => {
+                          setRating(e.target.value);
+                        }}
+                        className="rating_input"
+                      />
+                    </label>
+                    <span className="rating_text">
+                      twoja
+                      <br /> ocena
+                    </span>
+                  </div>
+                </div>
+                {/*<Book book={book} />*/}
+              </section>
+              {/*druga sekcja*/}
+              <section className="form_section_right">
+                <input type="submit" value="+" className="submit_btn" />
+                <label className="check_input">
+                  <input
+                    type="checkbox"
+                    value="checked"
+                    onChange={handleCheckChange}
+                  />
+                  {!checked ? " posiadasz?" : " posiadam"}
+                </label>
+
+                {checked ? (
+                  <button
+                    onClick={handleBorrowedClick}
+                    className="borrowed_btn"
+                  >
+                    {!borrowedClick ? "pożyczone?" : "pożyczone"}
+                  </button>
+                ) : null}
+                {borrowedClick ? (
+                  <div className="borrowed">
+                    <input
+                      className="borrowed_name"
+                      type="text"
+                      value={borrowedName}
+                      placeholder="komu?"
+                      onChange={(e) => setBorrowedName(e.target.value)}
+                    />
+                    <input
+                      className="borrowed_date"
+                      type="date"
+                      value={borrowedDate}
+                      onChange={(e) => setBorrowedDate(e.target.value)}
+                    />
+                  </div>
+                ) : null}
+              </section>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

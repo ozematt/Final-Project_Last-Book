@@ -1,0 +1,410 @@
+{
+  "books": [
+    {
+      "id": "e0fe",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "rating": "4",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "dsds",
+        "date": "2024-05-17"
+      }
+    },
+    {
+      "id": "da6d",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "977a",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "c60e",
+      "bookData": {
+        "title": "Harry Potter i Kamień Filozoficzny",
+        "authors": [
+          "J. K. Rowling"
+        ],
+        "rating": "7",
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=ID_4vQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "8c0d",
+      "bookData": {
+        "title": "Harry Potter i Kamień Filozoficzny",
+        "authors": [
+          "J. K. Rowling"
+        ],
+        "rating": "7",
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=ID_4vQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "21a8",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "80d9",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "6433",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "d464",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": "4",
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "3018",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": "4",
+        "have": true,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "ec5e",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "7c8d",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": true,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "4d91",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": true,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "b934",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "a01c",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "5343",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "0e3b",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "8d18",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "rating": "0",
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "9b9e",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "033b",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "rating": "5",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "vdfgdf",
+        "date": "2024-05-17"
+      }
+    },
+    {
+      "id": "47be",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "rating": "5",
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "vdfgdf",
+        "date": "2024-05-17"
+      }
+    },
+    {
+      "id": "81d2",
+      "bookData": {
+        "title": "",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "vdfgdf",
+        "date": "2024-05-17"
+      }
+    },
+    {
+      "id": "69cd",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "a910",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "6af7",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "6465",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    }
+  ]
+}

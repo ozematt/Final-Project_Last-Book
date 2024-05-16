@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const LoginLayout = () => {
   return (
@@ -11,7 +10,7 @@ const LoginLayout = () => {
           </div>
           <form className="login_form">
             <input type="text" placeholder="wpisz imię" />
-            <input type="submit" value="ZALOGUJ" />
+            <input type="submit" value="ZALOGUJ" className="login_button" />
           </form>
         </div>
       </div>

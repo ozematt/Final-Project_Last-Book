@@ -9,7 +9,7 @@
 .header {
   width: 100%;
   height: rem(80px);
-  background: $color-main;
+  background: black;
   font-size: rem(30px);
   @extend %flex_align-center;
 
@@ -26,17 +26,30 @@
   border-radius: rem(5px);
   @extend %flex_align-center;
   justify-content: center;
+  .counter {
+    font-size: rem(25px);
+  }
 }
 
 .user_box {
   @extend %flex_align-center;
+  position: relative;
   .user {
     margin-right: rem(10px);
+    color: aliceblue;
+    position: absolute;
+    left: rem(-75px);
+    font-size: rem(25px);
   }
   .user_avatar {
     width: rem(50px);
     height: rem(50px);
     border-radius: 50%;
-    background: black;
+    background: aliceblue;
   }
+}
+.logo {
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: rem(35px);
 }

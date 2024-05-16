@@ -2,7 +2,6 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-// import WelcomeLayout from "./layouts/WelcomeLayout";
 import LoginLayout from "./layouts/LoginLayout";
 import UserLayout from "./layouts/UserLayout";
 
@@ -11,7 +10,6 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          {/*<Route path="/welcome" element={<WelcomeLayout />} />*/}
           <Route path="/login" element={<LoginLayout />} />
           <Route path="/user" element={<UserLayout />} />
           <Route path="*" element={<h1>Not Found</h1>} />

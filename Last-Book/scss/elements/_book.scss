@@ -8,17 +8,18 @@
 }
 
 .book_cover {
-  width: rem(100px);
-  height: rem(150px);
+  width: rem(120px);
+  height: rem(160px);
   background-color: black;
+  background-size: contain;
 }
 
 .book_main {
+  margin-bottom: rem(50px);
   &_title {
     width: rem(300px);
     height: rem(20px);
-    background-color: white;
-    border: 1px solid black;
+    font-size: rem(18px);
   }
   &_content {
     display: flex;
@@ -29,17 +30,22 @@
     height: rem(60px);
     background-color: white;
     border: 1px solid black;
+    border-radius: rem(3px);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: rem(30px);
   }
 }
-
-.book_main_author {
-  width: rem(150px);
-  height: rem(20px);
-  background-color: white;
+.borrowed_btn_list {
+  margin-top: rem(7px);
+  border-radius: rem(3px);
+  font-size: rem(14px);
   border: 1px solid black;
+}
+.book_main_author {
+  margin-top: rem(10px);
+  font-size: rem(14px);
 }
 .img_section {
   display: flex;
@@ -50,8 +56,14 @@
 .flex_ma {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
 }
 .book_borrow_data {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  position: absolute;
+  top: rem(159px);
+  left: rem(0px);
 }
