@@ -1,0 +1,57 @@
+@import "../generic/variables";
+@import "../generic/functions";
+
+.book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book_cover {
+  width: rem(100px);
+  height: rem(150px);
+  background-color: black;
+}
+
+.book_main {
+  &_title {
+    width: rem(300px);
+    height: rem(20px);
+    background-color: white;
+    border: 1px solid black;
+  }
+  &_content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_rating_box {
+    width: rem(60px);
+    height: rem(60px);
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.book_main_author {
+  width: rem(150px);
+  height: rem(20px);
+  background-color: white;
+  border: 1px solid black;
+}
+.img_section {
+  display: flex;
+  flex-direction: column;
+  margin-right: rem(20px);
+}
+
+.flex_ma {
+  display: flex;
+  flex-direction: column;
+}
+.book_borrow_data {
+  display: flex;
+  justify-content: space-between;
+}
