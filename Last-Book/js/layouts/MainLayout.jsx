@@ -72,7 +72,6 @@ const MainLayout = () => {
           </div>
         </nav>
       </header>
-      <Book />
       <AddBook />
       {isLoggedIn === false ? (
         <section className="welcome-section wrapper">

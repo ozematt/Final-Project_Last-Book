@@ -18,7 +18,8 @@
 
 .rating_input {
   width: rem(50px);
-  height: rem(50px);
+  height: rem(25px);
+  margin-left: rem(10px);
 }
 
 .borrowed {
@@ -35,6 +36,11 @@
   &_right {
     display: flex;
     flex-direction: column;
+  }
+  &_left {
+    &_search {
+      display: flex;
+    }
   }
   .submit_btn {
     width: rem(100px);
@@ -54,4 +60,10 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.cover_search_img {
+  background-color: black;
+  width: 10px;
+  height: 30px;
 }
