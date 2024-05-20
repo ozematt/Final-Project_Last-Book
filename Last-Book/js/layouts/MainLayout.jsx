@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Welcome from "../Welcome";
 
@@ -9,6 +10,9 @@ const MainLayout = () => {
 
   const [userName, setUserName] = useState("Name");
   const [loggedIn, setLoggedIn] = useState(false);
+
+  //navigation to /user
+  const navigate = useNavigate();
 
   const handledNameChange = (name) => {
     setUserName(name);
@@ -19,6 +23,7 @@ const MainLayout = () => {
       setLoggedIn(false);
     } else {
       setLoggedIn(true);
+      navigate("/user");
     }
   }, [userName]);
 

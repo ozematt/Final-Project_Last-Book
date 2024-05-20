@@ -39,7 +39,6 @@ const Welcome = ({ onName }) => {
     }
 
     setNameEntered("");
-
     // localStorage.clear();
   };
 
@@ -59,11 +58,13 @@ const Welcome = ({ onName }) => {
                 value={nameEntered}
                 onChange={handleNameChange}
               />
+              {/*<Link to="/user">*/}
               <input
                 type="submit"
                 value="STWÓRZ PROFIL"
                 className="input_add_user"
               />
+              {/*</Link>*/}
             </form>
             <div className="welcome_login">
               <h3 className="welcome_login_text_h3">Masz profil ?</h3>

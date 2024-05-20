@@ -1325,6 +1325,21 @@
         "name": "",
         "date": ""
       }
+    },
+    {
+      "id": "435f",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
     }
   ]
 }
