@@ -6,10 +6,10 @@ const Welcome = ({ onName }) => {
   //PARENT ACTION
   const [dataToSend, setDataToSend] = useState("Name");
   onName(dataToSend);
-  console.log(dataToSend);
+  // console.log(dataToSend);
 
   const [nameEntered, setNameEntered] = useState("");
-  console.log(nameEntered);
+  // console.log(nameEntered);
   const [error, setError] = useState("");
 
   const handleNameChange = (e) => {
@@ -38,9 +38,11 @@ const Welcome = ({ onName }) => {
       const updatedUsers = [...users, newUser];
       localStorage.setItem("users", JSON.stringify(updatedUsers));
     }
+
     setNameEntered("");
+
     // localStorage.clear();
-    console.log(userData);
+    // console.log(userData);
   };
 
   // const handleFormReset = (e) => {};
@@ -61,13 +63,13 @@ const Welcome = ({ onName }) => {
                 value={nameEntered}
                 onChange={handleNameChange}
               />
-              {/*<Link to="/user">*/}
-              <input
-                type="submit"
-                value="STWÓRZ PROFIL"
-                className="input_add_user"
-              />
-              {/*</Link>*/}
+              <Link to="/user">
+                <input
+                  type="submit"
+                  value="STWÓRZ PROFIL"
+                  className="input_add_user"
+                />
+              </Link>
             </form>
             <div className="welcome_login">
               <h3 className="welcome_login_text_h3">Masz profil ?</h3>

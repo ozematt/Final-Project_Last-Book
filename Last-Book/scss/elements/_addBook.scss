@@ -3,124 +3,230 @@
 
 .add-book {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 .add-book_box {
-  margin-top: rem(50px);
   width: rem(800px);
   height: rem(220px);
-  border-radius: rem(10px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 0 0 rem(10px) rem(10px);
   border: 1px solid black;
 }
 
-.parent_relative {
-  position: relative;
-  .add-book_text {
-    position: absolute;
-    top: rem(-70px);
-    left: rem(-100px);
-  }
+.add-book_section_title {
+  margin-top: rem(25px);
+  border-radius: rem(10px) rem(10px) 0 0;
+  border: 1px solid black;
+  width: rem(800px);
+  height: rem(40px);
+  border-bottom-style: none;
+}
+.add-book_text {
+  line-height: 0;
+  margin-left: rem(30px);
 }
 
-.title_all {
+.form-sections {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  &_input {
-    position: relative;
+  //justify-content: space-between;
+  margin-left: 20px;
+  &_left {
+    width: 78%;
+  }
+  &_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.title_input::placeholder {
-  font-size: rem(12px);
+.search_section_bar {
+  position: relative;
 }
-.title_input {
+
+.search-input {
+  appearance: none;
+  margin-left: rem(30px);
+  margin-top: rem(30px);
+  width: rem(520px);
+  height: rem(30px);
+  border-radius: rem(10px) rem(10px) 0 0;
+  border: 1px solid black;
+}
+
+.search-input::placeholder {
+  padding-left: 5px;
+}
+
+.search-view {
+  margin-left: rem(30px);
+  background: white;
+  width: rem(520px);
+  height: rem(300px);
+  overflow-y: scroll;
+  border-radius: 0 0 rem(10px) rem(10px);
+  border: 1px solid black;
+  position: absolute;
+}
+
+.search-ul_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-ul_list_item {
+  margin: 10px 0;
+  border: 1px solid black;
+  border-bottom-style: none;
+  border-right-style: none;
+}
+.search-ul_list_item:hover {
+  box-shadow: 1px 2px 4px black;
+}
+
+.cover_search_img {
+  border: 1px solid black;
+  min-width: 80px;
+  height: 122px;
+  margin-right: rem(10px);
+}
+.selected-book {
+  display: flex;
+  margin-left: rem(30px);
+  margin-top: rem(10px);
+}
+
+.rating_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .rating_input {
-  width: rem(40px);
-  height: rem(25px);
-  margin-left: rem(10px);
+  width: rem(60px);
+  height: rem(60px);
+  text-align: center;
+  padding-left: rem(4px);
+  font-size: rem(23px);
+  outline: none;
+  &:focus {
+    border-radius: rem(3px);
+    outline: 1px solid black;
+  }
+}
+.rating_text {
+  padding: 0 rem(12px);
+  margin-top: rem(7px);
 }
 
-.rating_text {
-  font-size: rem(12px);
-  padding: 0 rem(10px);
+.book_info {
+  &-text {
+    font-size: rem(11px);
+    width: rem(370px);
+    &_fill {
+      max-width: rem(370px);
+      height: rem(40px);
+    }
+  }
 }
+
+.borrowed_focus {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.borrowed_btns {
+  padding: rem(2px) rem(10px);
+  font-size: rem(14px);
+  border: 0.5px solid black;
+  border-radius: rem(3px);
+  text-align: center;
+  background: #eeeeee;
+}
+
+.submit_btn {
+  width: 130px;
+  height: rem(60px);
+  margin-top: 30px;
+  font-size: 40px;
+  background: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+}
+/////////
 
 .borrowed {
   display: flex;
   flex-direction: column;
 }
 
-.form_section_left_part-two {
-  display: flex;
-}
-
-.form_section {
-  display: flex;
-  //position: relative;
-  &_right {
-    display: flex;
-    flex-direction: column;
-    //position: absolute;
-  }
-  &_left {
-    &_search {
-      display: flex;
-    }
-  }
-  .submit_btn {
-    width: rem(120px);
-    height: rem(50px);
-  }
-}
-
 .borrowed_btn {
-  position: absolute;
-  top: rem(75px);
-  width: rem(120px);
-  background: none;
+  width: rem(130px);
+  //background: black;
   border: 0.5px solid black;
   border-radius: rem(3px);
   font-size: rem(12px);
+  margin: rem(7px) 0;
+  //color: white;
 }
 .borrowed_name {
-  position: absolute;
-  width: rem(120px);
+  width: rem(130px);
   top: rem(90px);
 }
 .borrowed_date {
-  position: absolute;
-  width: rem(120px);
+  width: rem(130px);
   top: rem(115px);
 }
 
 .check_input {
-  padding: rem(5px) 0;
+  display: flex;
+  margin-top: rem(7px);
+  align-items: center;
+  width: 120px;
 }
+.check_input_checkbox {
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  border: 0.5px solid black;
+  border-radius: 3px;
+  position: relative;
+  margin-right: 12px;
 
-.search-view {
-  width: rem(420px);
-  height: rem(150px);
-  border-radius: rem(3px);
-  position: absolute;
-
-  top: rem(-17px);
-  left: rem(-140px);
-  &_item {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  &:checked::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
-
-.cover_search_img {
+input[type="checkbox"]:checked {
   background-color: black;
-  width: 80px;
-  height: 120px;
+}
+.cover_search {
+  display: flex;
+}
+
+.modal-overlay {
+  margin-top: 25px;
+  position: absolute;
+  width: 800px;
+  height: 260px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    margin-top: rem(80px);
+  }
 }

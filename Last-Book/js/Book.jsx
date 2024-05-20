@@ -6,7 +6,7 @@ const Book = ({ book }) => {
   const { title, authors, rating, have, cover } = bookData;
   const { borrowedStan, name, date } = borrowed;
 
-  console.log(borrowedStan);
+  // console.log(borrowedStan);
 
   return (
     <>
