@@ -1230,6 +1230,101 @@
         "name": "",
         "date": ""
       }
+    },
+    {
+      "id": "bb27",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "8d44",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "76df",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": "J. K. Rowling, Andrzej Polkowski, Media Rodzina",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=DisREAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "080f",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": []
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
+    },
+    {
+      "id": "9e2d",
+      "bookData": {
+        "title": "Władca",
+        "authors": [
+          [
+            "Juraj Červenák"
+          ],
+          [
+            "Florence Hellin"
+          ],
+          [
+            "Lange Antoni"
+          ],
+          [
+            "Grzegorz Rosiński",
+            "Jean Van Hamme"
+          ],
+          [
+            "Jean Van Hamme"
+          ],
+          [
+            "Piotr Deja"
+          ]
+        ],
+        "rating": 0,
+        "have": false,
+        "cover": []
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      }
     }
   ]
 }

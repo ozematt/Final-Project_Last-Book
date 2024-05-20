@@ -22,8 +22,11 @@
 .counter_box {
   width: rem(50px);
   height: rem(50px);
-  background: aliceblue;
+  background: black;
   border-radius: rem(5px);
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
   @extend %flex_align-center;
   justify-content: center;
   .counter {
@@ -33,11 +36,9 @@
 
 .user_box {
   @extend %flex_align-center;
-  position: relative;
   .user {
-    margin-right: rem(10px);
+    padding-right: rem(5px);
     color: aliceblue;
-    position: absolute;
     left: rem(-75px);
     font-size: rem(25px);
   }
@@ -45,11 +46,22 @@
     width: rem(50px);
     height: rem(50px);
     border-radius: 50%;
-    background: aliceblue;
+    border: 2px solid white;
+    background: transparent;
   }
 }
+
+.avatar_svg {
+  background-color: white;
+  width: rem(46px);
+  height: rem(46px);
+  border-radius: 50%;
+}
+
 .logo {
   color: aliceblue;
   font-weight: bolder;
   font-size: rem(35px);
+  position: absolute;
+  transform: translateX(-30%) translateY(-50%);
 }

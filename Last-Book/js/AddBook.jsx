@@ -166,6 +166,7 @@ const AddBook = () => {
     setShouldUncheck(true);
 
     setBookAdded(true);
+    setClickedBook(false);
   };
 
   const addedBookInfo = () => {
