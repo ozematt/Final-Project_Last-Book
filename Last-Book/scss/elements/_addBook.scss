@@ -1,35 +1,8 @@
 @import "../generic/variables";
 @import "../generic/functions";
 
-.add-book {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.add-book_box {
-  width: rem(800px);
-  height: rem(220px);
-  border-radius: 0 0 rem(10px) rem(10px);
-  border: 1px solid black;
-}
-
-.add-book_section_title {
-  margin-top: rem(25px);
-  border-radius: rem(10px) rem(10px) 0 0;
-  border: 1px solid black;
-  width: rem(800px);
-  height: rem(40px);
-  border-bottom-style: none;
-}
-.add-book_text {
-  line-height: 0;
-  margin-left: rem(30px);
-}
-
 .form-sections {
   display: flex;
-  //justify-content: space-between;
   margin-left: 20px;
   &_left {
     width: 78%;

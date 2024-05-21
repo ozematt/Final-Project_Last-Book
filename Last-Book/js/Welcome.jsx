@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { API } from "./api/constans";
+import { useNavigate } from "react-router-dom";
 
 const Welcome = ({ onName }) => {
-  //PARENT ACTION
-  const [dataToSend, setDataToSend] = useState("Name");
-  onName(dataToSend);
+  ////DATA
 
   const [nameEntered, setNameEntered] = useState("");
-
   const [error, setError] = useState("");
 
+  const navigate = useNavigate();
+
+  ////LOGIC
   const handleNameChange = (e) => {
     const value = e.target.value;
     setNameEntered(value);
@@ -19,29 +21,41 @@ const Welcome = ({ onName }) => {
   const handleSubmitUserName = (e) => {
     e.preventDefault();
 
-    const userData = JSON.parse(localStorage.getItem("users"));
-    let existingUser;
+    const userData = JSON.parse(localStorage.getItem("users")) || [];
+    let existingUser = userData.find((user) => user.username === nameEntered);
 
-    if (userData) {
-      existingUser = userData.find((user) => user.username === nameEntered);
-    }
-
-    if (existingUser !== undefined) {
+    if (existingUser) {
       setError("Użytkownik już istnieje!");
     } else {
-      setDataToSend(nameEntered);
-
-      let users = userData || [];
-
       const newUser = { username: nameEntered };
-      const updatedUsers = [...users, newUser];
-      localStorage.setItem("users", JSON.stringify(updatedUsers));
-    }
 
+      fetch(`${API}/users`, {
+        method: "POST",
+        body: JSON.stringify(newUser),
+        headers: { "Content-Type": "application/json" },
+      })
+        .then((res) => res.json())
+        .then((createdUser) => {
+          const updatedUsers = [...userData, createdUser];
+          localStorage.setItem("users", JSON.stringify(updatedUsers));
+
+          localStorage.setItem("currentUser", JSON.stringify(createdUser));
+
+          //action with data sent to parent
+          onName(nameEntered);
+
+          //navigate to user site
+          navigate(`/users/${createdUser.id}`);
+        })
+        .catch((error) => {
+          console.error("Błąd podczas dodawania użytkownika:", error);
+        });
+    }
     setNameEntered("");
     // localStorage.clear();
   };
 
+  ////UI
   return (
     <>
       <section className="welcome-section wrapper">
@@ -58,13 +72,11 @@ const Welcome = ({ onName }) => {
                 value={nameEntered}
                 onChange={handleNameChange}
               />
-              {/*<Link to="/user">*/}
               <input
                 type="submit"
                 value="STWÓRZ PROFIL"
                 className="input_add_user"
               />
-              {/*</Link>*/}
             </form>
             <div className="welcome_login">
               <h3 className="welcome_login_text_h3">Masz profil ?</h3>

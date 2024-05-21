@@ -10,8 +10,10 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route path="/login" element={<LoginLayout />} />
-          <Route path="/user" element={<UserLayout />} />
+          <Route path="login" element={<LoginLayout />} />
+          <Route path="users">
+            <Route path=":userName" element={<UserLayout />} />
+          </Route>
           <Route path="*" element={<h1>Not Found</h1>} />
         </Route>
       </Routes>

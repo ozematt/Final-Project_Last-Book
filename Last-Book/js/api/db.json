@@ -1,243 +1,80 @@
 {
+  "users": [
+    {
+      "id": "6763",
+      "username": "Mateusz"
+    },
+    {
+      "id": "fc15",
+      "username": "asdasd"
+    },
+    {
+      "id": "ca81",
+      "username": "adasda"
+    },
+    {
+      "id": "cccc",
+      "username": "asas"
+    },
+    {
+      "id": "041b",
+      "username": "asasx"
+    },
+    {
+      "id": "6321",
+      "username": ""
+    },
+    {
+      "id": "fedb",
+      "username": "wqwqw"
+    },
+    {
+      "id": "08b2",
+      "username": "Mateusz"
+    },
+    {
+      "id": "9126",
+      "username": "sdfsd"
+    },
+    {
+      "id": "4342",
+      "username": "dfgdf"
+    },
+    {
+      "id": "309e",
+      "username": "Arek"
+    },
+    {
+      "id": "0525",
+      "username": "sdfsdf"
+    },
+    {
+      "id": "5f4a",
+      "username": "srfgdgfsd"
+    }
+  ],
   "books": [
     {
-      "id": "e0fe",
+      "id": "2c24",
+      "bookData": {
+        "title": "Harry Styles. Nieoficjalna biografia",
+        "authors": "Danny White",
+        "rating": "3",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=YLXHEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "adsdas",
+        "date": ""
+      },
+      "userId": "fedb"
+    },
+    {
+      "id": "52ef",
       "bookData": {
         "title": "Harry Potter i Zakon Feniksa",
-        "authors": [
-          "J.K. Rowling"
-        ],
-        "rating": "4",
-        "have": true,
-        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
-      },
-      "borrowed": {
-        "borrowedStan": true,
-        "name": "dsds",
-        "date": "2024-05-17"
-      }
-    },
-    {
-      "id": "da6d",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "977a",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "c60e",
-      "bookData": {
-        "title": "Harry Potter i Kamień Filozoficzny",
-        "authors": [
-          "J. K. Rowling"
-        ],
-        "rating": "7",
-        "have": false,
-        "cover": "http://books.google.com/books/content?id=ID_4vQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "8c0d",
-      "bookData": {
-        "title": "Harry Potter i Kamień Filozoficzny",
-        "authors": [
-          "J. K. Rowling"
-        ],
-        "rating": "7",
-        "have": false,
-        "cover": "http://books.google.com/books/content?id=ID_4vQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "21a8",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "80d9",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "6433",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "d464",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": "4",
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "3018",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": "4",
-        "have": true,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": true,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "ec5e",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "7c8d",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": true,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": true,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "4d91",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": true,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": true,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "b934",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "a01c",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "5343",
-      "bookData": {
-        "title": "Harry Potter i Zakon Feniksa",
-        "authors": [
-          "J.K. Rowling"
-        ],
+        "authors": "J.K. Rowling",
         "rating": 0,
         "have": false,
         "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
@@ -246,10 +83,43 @@
         "borrowedStan": false,
         "name": "",
         "date": ""
-      }
+      },
+      "userId": "08b2"
     },
     {
-      "id": "0e3b",
+      "id": "12b3",
+      "bookData": {
+        "title": "Harry i Meghan. Chcemy być wolni",
+        "authors": "Omid Scobie, Carolyn Durand",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "08b2"
+    },
+    {
+      "id": "4a9b",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": []
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "0525"
+    },
+    {
+      "id": "1295",
       "bookData": {
         "title": "",
         "authors": [],
@@ -261,16 +131,31 @@
         "borrowedStan": false,
         "name": "",
         "date": ""
-      }
+      },
+      "userId": ""
     },
     {
-      "id": "8d18",
+      "id": "0907",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": []
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "0525"
+    },
+    {
+      "id": "89b0",
       "bookData": {
         "title": "Harry Potter i Zakon Feniksa",
-        "authors": [
-          "J.K. Rowling"
-        ],
-        "rating": "0",
+        "authors": "J.K. Rowling",
+        "rating": 0,
         "have": false,
         "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
       },
@@ -278,1068 +163,25 @@
         "borrowedStan": false,
         "name": "",
         "date": ""
-      }
-    },
-    {
-      "id": "9b9e",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
       },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
+      "userId": "0525"
     },
     {
-      "id": "033b",
+      "id": "fd00",
       "bookData": {
         "title": "Harry Potter i Zakon Feniksa",
-        "authors": [
-          "J.K. Rowling"
-        ],
-        "rating": "5",
+        "authors": "J.K. Rowling",
+        "rating": "10",
         "have": true,
         "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
       },
       "borrowed": {
         "borrowedStan": true,
-        "name": "vdfgdf",
-        "date": "2024-05-17"
-      }
-    },
-    {
-      "id": "47be",
-      "bookData": {
-        "title": "Harry Potter i Zakon Feniksa",
-        "authors": [
-          "J.K. Rowling"
-        ],
-        "rating": "5",
-        "have": false,
-        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+        "name": "sad",
+        "date": "2024-05-01"
       },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "vdfgdf",
-        "date": "2024-05-17"
-      }
-    },
-    {
-      "id": "81d2",
-      "bookData": {
-        "title": "",
-        "authors": [
-          "J.K. Rowling"
-        ],
-        "rating": 0,
-        "have": false,
-        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "vdfgdf",
-        "date": "2024-05-17"
-      }
-    },
-    {
-      "id": "69cd",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "a910",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "6af7",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "6465",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "885c",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "11e4",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "d363",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": true,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": true,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "768a",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "cdf1",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "e90f",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "8ad3",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "4f54",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "ffb9",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "447f",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "e054",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "cab7",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "c740",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "a9e6",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "0498",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "08fb",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "1564",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "5baa",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": true,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "ad15",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "3fb5",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "46b0",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "99ec",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "e6de",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "0b72",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "34c3",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "d57c",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "3508",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "2b5d",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "08fd",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "5f81",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "5bf7",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "af49",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "848b",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "2f8e",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "517a",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "870c",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "ddd0",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "d8e7",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "f7ae",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "79ae",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "95ef",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "d80c",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "6c98",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "9005",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "2f4c",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "9b44",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "0bd6",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "4006",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "7a19",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "e726",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "051f",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "c4fb",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "06c5",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": true,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "d8f1",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "0d52",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "bb27",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "8d44",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "76df",
-      "bookData": {
-        "title": "Harry Potter i Zakon Feniksa",
-        "authors": "J. K. Rowling, Andrzej Polkowski, Media Rodzina",
-        "rating": 0,
-        "have": false,
-        "cover": "http://books.google.com/books/content?id=DisREAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "080f",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "9e2d",
-      "bookData": {
-        "title": "Władca",
-        "authors": [
-          [
-            "Juraj Červenák"
-          ],
-          [
-            "Florence Hellin"
-          ],
-          [
-            "Lange Antoni"
-          ],
-          [
-            "Grzegorz Rosiński",
-            "Jean Van Hamme"
-          ],
-          [
-            "Jean Van Hamme"
-          ],
-          [
-            "Piotr Deja"
-          ]
-        ],
-        "rating": 0,
-        "have": false,
-        "cover": []
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
-    },
-    {
-      "id": "435f",
-      "bookData": {
-        "title": "",
-        "authors": [],
-        "rating": 0,
-        "have": false,
-        "cover": ""
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      }
+      "userId": "0525"
     }
-  ]
+  ],
+  "userBooks": []
 }

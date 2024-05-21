@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import Book from "./Book";
+import { API } from "./api/constans";
+import List from "./List";
 
 const AddBook = () => {
   //DATA
@@ -19,6 +21,7 @@ const AddBook = () => {
       name: "",
       date: "",
     },
+    userId: "",
   });
 
   //borrowed-section
@@ -128,6 +131,12 @@ const AddBook = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    if (!currentUser) {
+      console.error("Brak zalogowanego użytkownika!");
+      return;
+    }
     setBook({
       bookData: {
         title: searchTerm,
@@ -141,6 +150,7 @@ const AddBook = () => {
         name: borrowedName,
         date: borrowedDate,
       },
+      userId: currentUser.id,
     });
 
     const requestOptions = {
@@ -151,7 +161,7 @@ const AddBook = () => {
       body: JSON.stringify(book),
     };
 
-    fetch("http://localhost:3000/books", requestOptions)
+    fetch(`${API}/books`, requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error("Błąd:", error));
@@ -224,19 +234,14 @@ const AddBook = () => {
   return (
     <>
       {/*LISTA*/}
-      <div className="wrapper list">
-        <div className="back-view flex_ma">
-          <h2>Lista książek przeczytanych:</h2>
-          <Book book={book} />
-        </div>
-      </div>
+      <List newBook={book} />
       {/*DODAWANIE KSIAŻKI */}
-      <section className="add-book">
-        <div className="wrapper add-book">
-          <div className="add-book_section_title">
-            <h2 className="add-book_text">Dodaj książke:</h2>
+      <section>
+        <div className="wrapper section_wrapper">
+          <div className="section_title">
+            <h2 className="section_title_text">Dodaj książke:</h2>
           </div>
-          <div className="add-book_box">
+          <div className="section_box">
             <form className="form-sections" onSubmit={handleSubmit}>
               {/* left section */}
               <section className="form-sections_left">

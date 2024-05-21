@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-
 import Welcome from "../Welcome";
 
 const MainLayout = () => {
-  const location = useLocation();
-
-  const [userName, setUserName] = useState("Name");
+  ////DATA
+  const [userName, setUserName] = useState(
+    () => localStorage.getItem("userName") || "Name",
+  );
   const [loggedIn, setLoggedIn] = useState(false);
 
-  //navigation to /user
-  const navigate = useNavigate();
-
+  ////LOGIC
   const handledNameChange = (name) => {
     setUserName(name);
   };
@@ -23,10 +19,10 @@ const MainLayout = () => {
       setLoggedIn(false);
     } else {
       setLoggedIn(true);
-      navigate("/user");
     }
   }, [userName]);
 
+  ////UI
   return (
     <>
       <div>
@@ -44,10 +40,10 @@ const MainLayout = () => {
               <div className="user_box">
                 <span className="user">{userName}</span>
                 <div className="user_avatar">
-                  {!(userName === "Name") ? (
+                  {userName !== "Name" ? (
                     <img
                       className="avatar_svg"
-                      src="./assets/avatar.svg"
+                      src={"/assets/avatar.svg"}
                       alt="avatar"
                     />
                   ) : null}
