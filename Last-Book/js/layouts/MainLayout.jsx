@@ -4,9 +4,10 @@ import Welcome from "../Welcome";
 
 const MainLayout = () => {
   ////DATA
-  const [userName, setUserName] = useState(
-    () => localStorage.getItem("userName") || "Name",
-  );
+  const [userName, setUserName] = useState(() => {
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    return currentUser ? currentUser.username : "Name";
+  });
   const [loggedIn, setLoggedIn] = useState(false);
 
   ////LOGIC
@@ -22,6 +23,10 @@ const MainLayout = () => {
     }
   }, [userName]);
 
+  const handleLogoClicked = () => {
+    localStorage.removeItem("currentUser");
+  };
+
   ////UI
   return (
     <>
@@ -33,7 +38,7 @@ const MainLayout = () => {
                 <span className="counter">0</span>
               </div>
               <div>
-                <a href="#" className="logo">
+                <a href="/" className="logo" onClick={handleLogoClicked}>
                   Last Book
                 </a>
               </div>

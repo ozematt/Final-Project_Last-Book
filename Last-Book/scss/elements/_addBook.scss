@@ -86,6 +86,9 @@
     border-radius: rem(3px);
     outline: 1px solid black;
   }
+  &::placeholder {
+    font-size: rem(19px);
+  }
 }
 .rating_text {
   padding: 0 rem(12px);

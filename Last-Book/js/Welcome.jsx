@@ -55,39 +55,52 @@ const Welcome = ({ onName }) => {
     // localStorage.clear();
   };
 
+  const [loginClicked, setLoginClicked] = useState(false);
+
+  const handleLoginView = () => {
+    setLoginClicked(true);
+  };
+
   ////UI
   return (
     <>
-      <section className="welcome-section wrapper">
-        <div className="back-view">
-          <div className="welcome_box">
-            <div className="welcome_text">
-              <h2 className="welcome_text_h2">Cześć,</h2>
-              <h3 className="welcome_text_h3"> pierwszy raz tutaj?</h3>
-            </div>
-            <form className="welcome_form" onSubmit={handleSubmitUserName}>
-              <input
-                type="text"
-                placeholder="wpisz imię"
-                value={nameEntered}
-                onChange={handleNameChange}
-              />
-              <input
-                type="submit"
-                value="STWÓRZ PROFIL"
-                className="input_add_user"
-              />
-            </form>
-            <div className="welcome_login">
-              <h3 className="welcome_login_text_h3">Masz profil ?</h3>
-              <Link to="/login">
-                <button className="welcome_login_btn">mam profil</button>
-              </Link>
-              <p>{error}</p>
+      {!loginClicked ? (
+        <section className="welcome-section wrapper">
+          <div className="back-view">
+            <div className="welcome_box">
+              <div className="welcome_text">
+                <h2 className="welcome_text_h2">Cześć,</h2>
+                <h3 className="welcome_text_h3"> pierwszy raz tutaj?</h3>
+              </div>
+              <form className="welcome_form" onSubmit={handleSubmitUserName}>
+                <input
+                  type="text"
+                  placeholder="wpisz imię"
+                  value={nameEntered}
+                  onChange={handleNameChange}
+                />
+                <input
+                  type="submit"
+                  value="STWÓRZ PROFIL"
+                  className="input_add_user"
+                />
+              </form>
+              <div className="welcome_login">
+                <h3 className="welcome_login_text_h3">Masz profil ?</h3>
+                <Link to="/login">
+                  <button
+                    onClick={handleLoginView}
+                    className="welcome_login_btn"
+                  >
+                    mam profil
+                  </button>
+                </Link>
+                <p>{error}</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
     </>
   );
 };

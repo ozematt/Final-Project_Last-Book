@@ -67,6 +67,66 @@
     {
       "id": "9073",
       "username": "dadasd"
+    },
+    {
+      "id": "2ef7",
+      "username": "gagsgags"
+    },
+    {
+      "id": "4c9d",
+      "username": "sasa"
+    },
+    {
+      "id": "c538",
+      "username": "arkadiusz"
+    },
+    {
+      "id": "e001",
+      "username": "Mateuszsa"
+    },
+    {
+      "id": "1760",
+      "username": ""
+    },
+    {
+      "id": "53c7",
+      "username": "Mateusz"
+    },
+    {
+      "id": "1122",
+      "username": "arek"
+    },
+    {
+      "id": "051c",
+      "username": ""
+    },
+    {
+      "id": "3baa",
+      "username": "Matt"
+    },
+    {
+      "id": "bab7",
+      "username": "Mateusz "
+    },
+    {
+      "id": "1938",
+      "username": "sadasd"
+    },
+    {
+      "id": "0874",
+      "username": "Mateusz"
+    },
+    {
+      "id": "0d77",
+      "username": "Adrian"
+    },
+    {
+      "id": "7097",
+      "username": "Mati"
+    },
+    {
+      "id": "118f",
+      "username": "MAaaa"
     }
   ],
   "books": [
@@ -435,6 +495,461 @@
         "date": ""
       },
       "userId": ""
+    },
+    {
+      "id": "8db4",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "2154",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": "2",
+        "have": false,
+        "cover": []
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "9073"
+    },
+    {
+      "id": "ebed",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": "1",
+        "have": false,
+        "cover": []
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "9073"
+    },
+    {
+      "id": "cb2b",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "cadd",
+      "bookData": {
+        "title": "Harry i Meghan. Chcemy być wolni",
+        "authors": "Omid Scobie, Carolyn Durand",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "2ef7"
+    },
+    {
+      "id": "0efa",
+      "bookData": {
+        "title": "Harry Styles. Nieoficjalna biografia",
+        "authors": "Danny White",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=YLXHEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "2ef7"
+    },
+    {
+      "id": "613b",
+      "bookData": {
+        "title": "Harry Styles. Nieoficjalna biografia",
+        "authors": "Danny White",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=YLXHEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "2ef7"
+    },
+    {
+      "id": "f2e7",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "67da",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": "J.K. Rowling",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "c538"
+    },
+    {
+      "id": "1504",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "6bf6",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "d1e5",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "9f7a",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "a6ae",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "624a",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "fc71",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "28e7",
+      "bookData": {
+        "title": "Harry Potter i więzień Azkabanu",
+        "authors": "J. K. Rowling",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=UA8bDQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "bab7"
+    },
+    {
+      "id": "b855",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "dcdc",
+      "bookData": {
+        "title": "Harry Potter i książę półkrwi",
+        "authors": "J. K. Rowling",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=uygREAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "1938"
+    },
+    {
+      "id": "6084",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": "J.K. Rowling",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "1938"
+    },
+    {
+      "id": "4b27",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "e48b",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "5d1e",
+      "bookData": {
+        "title": "Harry i Meghan. Chcemy być wolni",
+        "authors": "Omid Scobie, Carolyn Durand",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "1938"
+    },
+    {
+      "id": "9890",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": [
+          [
+            "J.K. Rowling"
+          ],
+          [
+            "Omid Scobie",
+            "Carolyn Durand"
+          ],
+          [
+            "Lucile Lhoste"
+          ],
+          [
+            "Danny White"
+          ],
+          [
+            "Natalia Fras"
+          ]
+        ],
+        "rating": 0,
+        "have": false,
+        "cover": [
+          "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "http://books.google.com/books/content?id=0i_EEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "http://books.google.com/books/content?id=YLXHEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "http://books.google.com/books/content?id=EiMREAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+        ]
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "1938"
+    },
+    {
+      "id": "a98e",
+      "bookData": {
+        "title": "Harry i Meghan. Chcemy być wolni",
+        "authors": "Omid Scobie, Carolyn Durand",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "1938"
+    },
+    {
+      "id": "e9c8",
+      "bookData": {
+        "title": "Władca Pierścieni",
+        "authors": "J. R. R. Tolkien",
+        "rating": "10",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=dRBJPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "sdsds",
+        "date": "2024-05-17"
+      },
+      "userId": "1938"
+    },
+    {
+      "id": "8e9d",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": "J.K. Rowling",
+        "rating": "4",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "erer",
+        "date": "2024-05-16"
+      },
+      "userId": "0874"
     }
   ],
   "userBooks": []

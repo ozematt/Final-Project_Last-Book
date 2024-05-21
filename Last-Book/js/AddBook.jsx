@@ -23,7 +23,7 @@ const AddBook = () => {
     },
     userId: "",
   });
-
+  console.log(book);
   //borrowed-section
   const [borrowedClick, setBorrowedClick] = useState(false);
   const [borrowedName, setBorrowedName] = useState("");
@@ -50,11 +50,6 @@ const AddBook = () => {
 
   //LOGIC
   const handleCheckChange = (event) => {
-    // if (!checked) {
-    //   setChecked(true);
-    // } else {
-    //   setChecked(false);
-    // }
     setChecked(event.target.checked);
   };
 
@@ -92,7 +87,7 @@ const AddBook = () => {
               .filter((item) => item.volumeInfo.title.startsWith(value))
               .map((item) => item.volumeInfo.title);
             setBooksView(bookData);
-            console.log(bookData);
+            // console.log(bookData);
 
             const authors = data.items
               .filter((item) => item.volumeInfo.title.startsWith(value))
@@ -127,17 +122,17 @@ const AddBook = () => {
     setClickedBook(true);
   };
 
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  // console.log(currentUser.id);
   ////FORM SUBMIT
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
     if (!currentUser) {
       console.error("Brak zalogowanego użytkownika!");
       return;
     }
-    setBook({
+    const newBook = {
       bookData: {
         title: searchTerm,
         authors: searchedAuthors,
@@ -151,21 +146,21 @@ const AddBook = () => {
         date: borrowedDate,
       },
       userId: currentUser.id,
-    });
+    };
 
     const requestOptions = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(book),
+      body: JSON.stringify(newBook),
     };
 
     fetch(`${API}/books`, requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error("Błąd:", error));
-
+    setBook((prevState) => ({ ...prevState, ...newBook }));
     //object book clean
     setSearchTerm("");
     setRating(0);
@@ -197,7 +192,11 @@ const AddBook = () => {
       </>
     );
   };
-
+  const handleRatingFocus = () => {
+    if (rating === 0) {
+      setRating("");
+    }
+  };
   //
   const searchWindow = () => {
     return clickedBook ? null : (
@@ -235,7 +234,7 @@ const AddBook = () => {
   return (
     <>
       {/*LISTA*/}
-      <List newBook={book} />
+      {/*<List newBook={book} />*/}
       {/*DODAWANIE KSIAŻKI */}
       <section>
         <div className="wrapper section_wrapper">
@@ -306,6 +305,7 @@ const AddBook = () => {
                         }}
                         className="rating_input"
                         max="10"
+                        onFocus={handleRatingFocus}
                         placeholder="0/10"
                       />
                       <div className="book_info-text rating_text">
