@@ -3,8 +3,8 @@
 
 .book {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-left: 40px;
+  padding-top: 15px;
 }
 
 .book_cover {
@@ -15,15 +15,16 @@
 }
 
 .book_main {
-  margin-bottom: rem(50px);
+  padding-left: 12px;
   &_title {
-    width: rem(300px);
-    height: rem(20px);
+    width: rem(500px);
+    height: rem(38px);
     font-size: rem(18px);
   }
   &_content {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
   &_rating_box {
     width: rem(60px);
@@ -35,35 +36,39 @@
     justify-content: center;
     align-items: center;
     font-size: rem(30px);
+    margin-bottom: rem(5px);
   }
 }
 .borrowed_btn_list {
-  margin-top: rem(7px);
-  border-radius: rem(3px);
+  border-radius: 0 0 rem(3px) rem(3px);
   font-size: rem(14px);
   border: 1px solid black;
+  background: white;
+  color: #c0bfbf;
 }
 .book_main_author {
-  margin-top: rem(10px);
-  font-size: rem(14px);
+  width: rem(500px);
+  height: rem(38px);
 }
 .img_section {
   display: flex;
   flex-direction: column;
-  margin-right: rem(20px);
 }
 
-.flex_ma {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-}
 .book_borrow_data {
   display: flex;
-  justify-content: flex-start;
-  position: absolute;
-  top: rem(159px);
-  left: rem(0px);
+  padding-right: 20px;
+  &_info {
+    padding-right: 20px;
+  }
+}
+.book_rating_box {
+  text-align: center;
+}
+.book_delete_btn {
+  font-size: rem(12px);
+  width: rem(60px);
+  padding: 2px;
+  margin-top: 5px;
+  //height: rem(60px);
 }

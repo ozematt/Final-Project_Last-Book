@@ -1,12 +1,26 @@
 import React from "react";
-import AddBook from "./AddBook";
+import { useState } from "react";
 
 const Book = ({ book }) => {
   const { bookData, borrowed } = book;
   const { title, authors, rating, have, cover } = bookData;
   const { borrowedStan, name, date } = borrowed;
 
-  // console.log(borrowedStan);
+  const [borrowedEdit, setBorrowedEdit] = useState(true);
+
+  let buttonStyle = {
+    background: "#FC2C2CFF",
+    color: "white",
+  };
+
+  const handleBorrowedEdit = (e) => {
+    const value = e.target.value;
+    if (borrowedEdit) {
+      setBorrowedEdit(false);
+    } else {
+      setBorrowedEdit(true);
+    }
+  };
 
   return (
     <>
@@ -20,35 +34,61 @@ const Book = ({ book }) => {
           {borrowedStan ? (
             <button
               className="borrowed_btn_list"
-              style={{ background: "red", color: "black", fontWeight: "bold" }}
+              onClick={handleBorrowedEdit}
+              style={borrowedEdit ? buttonStyle : undefined}
             >
               pożyczyłem
             </button>
           ) : (
-            <button
-              className="borrowed_btn_list"
-              style={{ background: "lightgray", color: "white" }}
-            >
+            <button className="borrowed_btn_list" onClick={handleBorrowedEdit}>
               pożyczyłem
             </button>
           )}
         </div>
-        <div className="flex_ma">
+        <div>
           <div className="book_main">
-            <p className="book_main_title">{title}</p>
+            <div className="book_info-text">
+              <strong>tytuł:</strong>
+            </div>
+            <div className="book_main_title">{title}</div>
             <div className="book_main_content">
               <div className="book_main_author_box">
-                <p className="book_main_author">{authors}</p>
-                {borrowedStan ? <p> w posiadniu</p> : null}
+                <div className="book_info-text">
+                  <strong>autor:</strong>
+                </div>
+                <div className="book_main_author">{authors}</div>
+                {borrowedStan ? (
+                  <p>
+                    <strong>POSIADAM</strong>
+                  </p>
+                ) : null}
               </div>
-              <div className="book_main_rating_box">
-                {rating > 0 ? <p>{rating}</p> : <p>0</p>}
+              <div className="book_rating_box">
+                <div className="book_main_rating_box">
+                  {rating > 0 ? <span>{rating}</span> : <span>0</span>}
+                </div>
+                <span>ocena</span>
+                <br />
+                <button className="book_delete_btn">
+                  usuń <br />
+                  książke
+                </button>
               </div>
             </div>
-          </div>
-          <div className="book_borrow_data">
-            {date ? <span>kiedy: {date}</span> : null}
-            {name.length >= 3 ? <span>komu: {name}</span> : null}
+            {borrowedEdit ? (
+              <div className="book_borrow_data">
+                {date ? (
+                  <div className="book_borrow_data_info">
+                    <strong>kiedy:</strong> {date}
+                  </div>
+                ) : null}
+                {name.length >= 3 ? (
+                  <div className="book_borrow_data_info">
+                    <strong>komu:</strong> {name}
+                  </div>
+                ) : null}
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

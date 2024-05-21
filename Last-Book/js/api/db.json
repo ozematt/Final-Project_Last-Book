@@ -51,6 +51,22 @@
     {
       "id": "5f4a",
       "username": "srfgdgfsd"
+    },
+    {
+      "id": "1745",
+      "username": "asdasd"
+    },
+    {
+      "id": "3c14",
+      "username": "sasas"
+    },
+    {
+      "id": "58ac",
+      "username": "Mateuszz"
+    },
+    {
+      "id": "9073",
+      "username": "dadasd"
     }
   ],
   "books": [
@@ -181,6 +197,244 @@
         "date": "2024-05-01"
       },
       "userId": "0525"
+    },
+    {
+      "id": "bb95",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "3b95",
+      "bookData": {
+        "title": "Harry Potter i Tajemnica Hogwartu",
+        "authors": [
+          [
+            "J.K. Rowling"
+          ],
+          [
+            "Omid Scobie",
+            "Carolyn Durand"
+          ],
+          [
+            "Lucile Lhoste"
+          ],
+          [
+            "Danny White"
+          ],
+          [
+            "Natalia Fras"
+          ]
+        ],
+        "rating": "10",
+        "have": true,
+        "cover": [
+          "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "http://books.google.com/books/content?id=0i_EEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "http://books.google.com/books/content?id=YLXHEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "http://books.google.com/books/content?id=EiMREAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+        ]
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "dfdf",
+        "date": "2024-05-09"
+      },
+      "userId": "5f4a"
+    },
+    {
+      "id": "c1e6",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "1a29",
+      "bookData": {
+        "title": "Harry Potter i Tajemnica Hogwartu",
+        "authors": "Natalia Fras",
+        "rating": 0,
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=EiMREAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "ads",
+        "date": "2024-05-09"
+      },
+      "userId": "1745"
+    },
+    {
+      "id": "63c3",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
+    },
+    {
+      "id": "f86d",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": "J.K. Rowling",
+        "rating": 0,
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "dsds",
+        "date": "2024-05-16"
+      },
+      "userId": "3c14"
+    },
+    {
+      "id": "7b55",
+      "bookData": {
+        "title": "Harry i Meghan. Chcemy być wolni",
+        "authors": "Omid Scobie, Carolyn Durand",
+        "rating": 0,
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "dsds",
+        "date": "2024-05-16"
+      },
+      "userId": "3c14"
+    },
+    {
+      "id": "ee82",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": []
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "dsds",
+        "date": "2024-05-16"
+      },
+      "userId": "3c14"
+    },
+    {
+      "id": "a2c9",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": []
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "dsds",
+        "date": "2024-05-16"
+      },
+      "userId": "3c14"
+    },
+    {
+      "id": "e35c",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": []
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "3c14"
+    },
+    {
+      "id": "5657",
+      "bookData": {
+        "title": "Ha Jin",
+        "authors": [
+          [
+            "J.K. Rowling"
+          ],
+          [
+            "Omid Scobie",
+            "Carolyn Durand"
+          ],
+          [
+            "Lucile Lhoste"
+          ],
+          [
+            "Danny White"
+          ],
+          [
+            "Natalia Fras"
+          ]
+        ],
+        "rating": 0,
+        "have": false,
+        "cover": [
+          "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "http://books.google.com/books/content?id=0i_EEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "http://books.google.com/books/content?id=YLXHEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "http://books.google.com/books/content?id=EiMREAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+        ]
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "3c14"
+    },
+    {
+      "id": "9118",
+      "bookData": {
+        "title": "",
+        "authors": [],
+        "rating": 0,
+        "have": false,
+        "cover": ""
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": ""
     }
   ],
   "userBooks": []

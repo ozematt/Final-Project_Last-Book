@@ -174,7 +174,8 @@ const AddBook = () => {
     setBorrowedClick(false);
     setChecked(false);
     setShouldUncheck(true);
-
+    setBorrowedDate("");
+    setBorrowedName("");
     setBookAdded(true);
     setClickedBook(false);
   };
