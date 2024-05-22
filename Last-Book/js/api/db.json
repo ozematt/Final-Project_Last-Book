@@ -936,18 +936,66 @@
       "userId": "1938"
     },
     {
-      "id": "8e9d",
+      "id": "5c4d",
       "bookData": {
         "title": "Harry Potter i Zakon Feniksa",
         "authors": "J.K. Rowling",
-        "rating": "4",
+        "rating": "10",
         "have": true,
         "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
       },
       "borrowed": {
         "borrowedStan": true,
-        "name": "erer",
-        "date": "2024-05-16"
+        "name": "dasd",
+        "date": "2024-05-26"
+      },
+      "userId": "0874"
+    },
+    {
+      "id": "670f",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": "J.K. Rowling",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "0874"
+    },
+    {
+      "id": "cfd8",
+      "bookData": {
+        "title": "Harry i Meghan. Chcemy być wolni",
+        "authors": "Omid Scobie, Carolyn Durand",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "0874"
+    },
+    {
+      "id": "929a",
+      "bookData": {
+        "title": "Harry Styles. Nieoficjalna biografia",
+        "authors": "Danny White",
+        "rating": "1",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=YLXHEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
       },
       "userId": "0874"
     }

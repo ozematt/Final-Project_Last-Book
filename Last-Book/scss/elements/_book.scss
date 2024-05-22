@@ -23,8 +23,8 @@
   }
   &_content {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    height: rem(112px);
+    //margin-top: 10px;
   }
   &_rating_box {
     width: rem(60px);
@@ -58,6 +58,7 @@
 .book_borrow_data {
   display: flex;
   padding-right: 20px;
+  //width: rem(40px);
   &_info {
     padding-right: 20px;
   }

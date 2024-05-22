@@ -161,6 +161,7 @@ const AddBook = () => {
       .then((data) => console.log(data))
       .catch((error) => console.error("Błąd:", error));
     setBook((prevState) => ({ ...prevState, ...newBook }));
+
     //object book clean
     setSearchTerm("");
     setRating(0);
@@ -192,6 +193,7 @@ const AddBook = () => {
       </>
     );
   };
+
   const handleRatingFocus = () => {
     if (rating === 0) {
       setRating("");
@@ -234,7 +236,7 @@ const AddBook = () => {
   return (
     <>
       {/*LISTA*/}
-      {/*<List newBook={book} />*/}
+
       {/*DODAWANIE KSIAŻKI */}
       <section>
         <div className="wrapper section_wrapper">
@@ -343,7 +345,7 @@ const AddBook = () => {
                       className="borrowed_name"
                       type="text"
                       value={borrowedName}
-                      placeholder="komu?"
+                      placeholder="komu? kiedy?"
                       onChange={(e) => setBorrowedName(e.target.value)}
                     />
                     <input
@@ -361,6 +363,7 @@ const AddBook = () => {
         </div>
         {bookAdded ? addedBookInfo() : null}
       </section>
+      <List newBook={book} />
     </>
   );
 };

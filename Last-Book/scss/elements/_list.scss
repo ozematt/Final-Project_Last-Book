@@ -1,2 +1,76 @@
 @import "../generic/variables";
 @import "../generic/functions";
+
+.user_book_list {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.user_book_list-foreground {
+  width: 780px;
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  left: -390px;
+  background: rgba(255, 255, 255, 0.89);
+  text-align: center;
+  & h2 {
+    margin-top: 85px;
+    cursor: pointer;
+  }
+}
+.box-relative {
+  position: relative;
+}
+.section_box_list {
+  min-width: rem(800px);
+  max-height: rem(210px);
+  border-radius: 0 0 rem(10px) rem(10px);
+  border: 1px solid black;
+  & ul {
+    padding: 0;
+    margin: 0;
+  }
+}
+.list_title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_hide {
+  padding-right: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.user_book_list-clicked {
+  overflow: visible;
+  position: relative;
+  z-index: 0;
+}
+
+.section_box_list-clicked {
+  min-width: rem(800px);
+  min-height: rem(220px);
+  border-radius: 0 0 rem(10px) rem(10px);
+  border: 1px solid black;
+  & ul {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.user_book_list-foreground-clicked {
+  //position: absolute;
+  //z-index: 1;
+  //top: 70px;
+  //left: -390px;
+  //background: rgba(255, 255, 255, 0.89);
+  //text-align: center;
+  & h2 {
+    //display: none;
+  }
+}

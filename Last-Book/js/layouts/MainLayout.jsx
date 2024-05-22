@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Welcome from "../Welcome";
+import { useNumberOfBooks } from "../NumberOfBooksContext";
 
 const MainLayout = () => {
   ////DATA
@@ -10,10 +11,12 @@ const MainLayout = () => {
   });
   const [loggedIn, setLoggedIn] = useState(false);
 
+  const { setNumberOfBooks } = useNumberOfBooks();
   ////LOGIC
   const handledNameChange = (name) => {
     setUserName(name);
   };
+  const { numberOfBooks } = useNumberOfBooks();
 
   useEffect(() => {
     if (userName === "Name") {
@@ -35,7 +38,9 @@ const MainLayout = () => {
           <nav className="wrapper">
             <div className="nav_box">
               <div className="counter_box">
-                <span className="counter">0</span>
+                <span className="counter">
+                  {numberOfBooks > 0 ? numberOfBooks : 0}
+                </span>
               </div>
               <div>
                 <a href="/" className="logo" onClick={handleLogoClicked}>
