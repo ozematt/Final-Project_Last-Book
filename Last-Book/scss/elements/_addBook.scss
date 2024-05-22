@@ -190,13 +190,14 @@ input[type="checkbox"]:checked {
 }
 
 .modal-overlay {
-  margin-top: 25px;
   position: absolute;
   width: 800px;
   height: 260px;
   background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid black;
   border-radius: 10px;
+  top: 244px;
+  left: -21px;
 }
 .modal-content {
   display: flex;
@@ -209,6 +210,7 @@ input[type="checkbox"]:checked {
 
 .cover-button-relative {
   position: relative;
+  z-index: -1;
 }
 .cover-button {
   width: 70px;

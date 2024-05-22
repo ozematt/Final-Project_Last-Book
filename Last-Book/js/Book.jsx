@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 
 const Book = ({ book, onDelete }) => {
+  //DATA
   const { bookData, borrowed, id } = book;
   const { title, authors, rating, cover } = bookData;
   const { borrowedStan, name, date } = borrowed;
 
   const [borrowedEdit, setBorrowedEdit] = useState(true);
 
+  //LOGIC
   let buttonStyle = {
     background: "#FC2C2CFF",
     color: "white",
@@ -20,6 +22,7 @@ const Book = ({ book, onDelete }) => {
     onDelete(id);
   };
 
+  //UI
   return (
     <div className="book">
       <div className="img_section">

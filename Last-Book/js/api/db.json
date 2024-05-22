@@ -940,22 +940,6 @@
       "userId": "1938"
     },
     {
-      "id": "e2a6",
-      "bookData": {
-        "title": "Harry i Meghan. Chcemy być wolni",
-        "authors": "Omid Scobie, Carolyn Durand",
-        "rating": 0,
-        "have": false,
-        "cover": "http://books.google.com/books/content?id=F2JxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      },
-      "borrowed": {
-        "borrowedStan": false,
-        "name": "",
-        "date": ""
-      },
-      "userId": "0874"
-    },
-    {
       "id": "27de",
       "bookData": {
         "title": "Harry i Meghan. Chcemy być wolni",
@@ -970,6 +954,54 @@
         "date": ""
       },
       "userId": "a3b1"
+    },
+    {
+      "id": "3a81",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": "J.K. Rowling",
+        "rating": "10",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=mk7gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": true,
+        "name": "Andrzej",
+        "date": "2024-05-24"
+      },
+      "userId": "0874"
+    },
+    {
+      "id": "8f7d",
+      "bookData": {
+        "title": "Potop",
+        "authors": "Henryk Sienkiewicz",
+        "rating": "7",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=85dWDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "0874"
+    },
+    {
+      "id": "8c65",
+      "bookData": {
+        "title": "Harry Potter i więzień Azkabanu",
+        "authors": "J. K. Rowling",
+        "rating": "5",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=UA8bDQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "0874"
     }
   ],
   "userBooks": []

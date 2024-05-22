@@ -10,7 +10,6 @@ const UserLayout = () => {
 
   return (
     <>
-      {/*<List />*/}
       <AddBook />
     </>
   );

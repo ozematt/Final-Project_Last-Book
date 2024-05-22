@@ -62,7 +62,7 @@ const AddBook = () => {
     }
   };
 
-  //// SEARCH AND API
+  //// search and api
   let timeoutId;
   const handleSearch = (e) => {
     const value = e.target.value;
@@ -123,7 +123,7 @@ const AddBook = () => {
   };
 
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-  // console.log(currentUser.id);
+
   ////FORM SUBMIT
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -235,7 +235,7 @@ const AddBook = () => {
   //UI
   return (
     <>
-      {/*DODAWANIE KSIAŻKI */}
+      {/*BOOK ADD*/}
       <section>
         <div className="wrapper section_wrapper">
           <div className="section_title">
@@ -243,10 +243,10 @@ const AddBook = () => {
           </div>
           <div className="section_box">
             <form className="form-sections" onSubmit={handleSubmit}>
-              {/* left section */}
               <section className="form-sections_left">
                 <div className="form-sections_left_search">
                   <div className="search_section_bar">
+                    {bookAdded ? addedBookInfo() : null}
                     <label>
                       <input
                         className="search-input"
@@ -256,7 +256,6 @@ const AddBook = () => {
                         onChange={handleSearch}
                       />
                     </label>
-
                     {/* search window examples */}
                     {searchTerm ? searchWindow() : null}
                   </div>
@@ -285,7 +284,6 @@ const AddBook = () => {
                           <strong>{searchedAuthors}</strong>
                         </div>
                       </div>
-                      {/*buttons validation*/}
                       <div className="borrowed_focus">
                         {checked ? (
                           <div className="borrowed_btns">posiadam</div>
@@ -359,9 +357,8 @@ const AddBook = () => {
             </form>
           </div>
         </div>
-        {bookAdded ? addedBookInfo() : null}
       </section>
-      {/*LISTA*/}
+      {/*LIST*/}
       <List newBook={book} />
     </>
   );

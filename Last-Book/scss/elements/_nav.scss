@@ -15,11 +15,13 @@
 
   .nav_box {
     @extend %flex_align-center;
-    justify-content: space-around;
+    justify-content: space-between;
+    //justify-content: space-around;
   }
 }
 
 .counter_box {
+  margin-left: (40px);
   width: rem(50px);
   height: rem(50px);
   background: black;
@@ -35,6 +37,7 @@
 }
 
 .user_box {
+  margin-right: (40px);
   @extend %flex_align-center;
   .user {
     padding-right: rem(5px);
@@ -52,10 +55,8 @@
 }
 
 .avatar_svg {
-  //background-color: white;
   width: rem(46px);
   height: rem(46px);
-  //border-radius: 50%;
 }
 
 .logo {
