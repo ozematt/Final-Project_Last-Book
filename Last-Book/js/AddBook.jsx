@@ -1,11 +1,10 @@
 import React from "react";
-import { useState } from "react";
-import Book from "./Book";
+import { useState, useEffect } from "react";
 import { API } from "./api/constans";
 import List from "./List";
 
 const AddBook = () => {
-  //DATA
+  ////DATA
   const [bookAdded, setBookAdded] = useState(false);
   //added book data
   const [book, setBook] = useState({
@@ -87,13 +86,14 @@ const AddBook = () => {
               .filter((item) => item.volumeInfo.title.startsWith(value))
               .map((item) => item.volumeInfo.title);
             setBooksView(bookData);
-            // console.log(bookData);
 
+            // book authors search
             const authors = data.items
               .filter((item) => item.volumeInfo.title.startsWith(value))
               .map((item) => item.volumeInfo.authors);
             setSearchedAuthors(authors);
 
+            // book cover search
             const covers = data.items
               .filter((item) => item.volumeInfo.title.startsWith(value))
               .map((item) => item.volumeInfo.imageLinks.smallThumbnail);
@@ -235,8 +235,6 @@ const AddBook = () => {
   //UI
   return (
     <>
-      {/*LISTA*/}
-
       {/*DODAWANIE KSIAŻKI */}
       <section>
         <div className="wrapper section_wrapper">
@@ -363,6 +361,7 @@ const AddBook = () => {
         </div>
         {bookAdded ? addedBookInfo() : null}
       </section>
+      {/*LISTA*/}
       <List newBook={book} />
     </>
   );

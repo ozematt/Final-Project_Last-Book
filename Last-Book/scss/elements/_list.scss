@@ -26,7 +26,8 @@
 }
 .section_box_list {
   min-width: rem(800px);
-  max-height: rem(210px);
+  height: rem(210px);
+  max-height: rem(220px);
   border-radius: 0 0 rem(10px) rem(10px);
   border: 1px solid black;
   & ul {

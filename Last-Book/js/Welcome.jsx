@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { API } from "./api/constans";
 import { useNavigate } from "react-router-dom";
-import Book from "./Book";
 
 const Welcome = ({ onName }) => {
   ////DATA
 
   const [nameEntered, setNameEntered] = useState("");
   const [error, setError] = useState("");
+  const [loginClicked, setLoginClicked] = useState(false);
 
   const navigate = useNavigate();
 
@@ -17,6 +17,10 @@ const Welcome = ({ onName }) => {
   const handleNameChange = (e) => {
     const value = e.target.value;
     setNameEntered(value);
+  };
+
+  const handleLoginView = () => {
+    setLoginClicked(true);
   };
 
   const handleSubmitUserName = (e) => {
@@ -54,12 +58,6 @@ const Welcome = ({ onName }) => {
     }
     setNameEntered("");
     // localStorage.clear();
-  };
-
-  const [loginClicked, setLoginClicked] = useState(false);
-
-  const handleLoginView = () => {
-    setLoginClicked(true);
   };
 
   ////UI

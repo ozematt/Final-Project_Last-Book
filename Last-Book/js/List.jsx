@@ -5,35 +5,25 @@ import { API } from "./api/constans";
 import { useNumberOfBooks } from "./NumberOfBooksContext";
 
 const List = ({ newBook }) => {
+  //DATA
   const [books, setBooks] = useState([]);
   const [listClicked, setListClicked] = useState(false);
-
-  // const numberOfBooks = books.length;
-
-  // console.log(numberOfBooks);
 
   const userId = JSON.parse(localStorage.getItem("currentUser"))?.id;
   const { setNumberOfBooks } = useNumberOfBooks();
 
-  //     useEffect(() => {
-  //         // Pobierz książki i ustaw liczbę książek
-  //
-  //     }, [userBooks.length, setNumberOfBooks]);
-  //
-  //     // Reszta kodu...
-  // };
-
+  //LOGIC
   useEffect(() => {
     if (userId) {
-      // user data
+      // Fetch user data
       fetch(`${API}/users/${userId}`)
         .then((response) => response.json())
         .then((user) => {
-          // books data
+          // Fetch books data
           fetch(`${API}/books`)
             .then((response) => response.json())
             .then((allBooks) => {
-              // filter books by userId
+              // Filter books by userId
               const userBooks = allBooks.filter(
                 (book) => book.userId === user.id,
               );
@@ -46,6 +36,16 @@ const List = ({ newBook }) => {
     }
   }, [userId, setNumberOfBooks]);
 
+  useEffect(() => {
+    if (newBook && newBook.userId === userId) {
+      setBooks((prevBooks) => {
+        const updatedBooks = [...prevBooks, newBook];
+        setNumberOfBooks(updatedBooks.length);
+        return updatedBooks;
+      });
+    }
+  }, [newBook, userId, setNumberOfBooks]);
+
   //delete book from list
   const handleDelete = (deletedBookId) => {
     fetch(`${API}/books/${deletedBookId}`, {
@@ -55,22 +55,23 @@ const List = ({ newBook }) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        //update user book list
-        setBooks((prevBooks) =>
-          prevBooks.filter((book) => book.id !== deletedBookId),
-        );
+        // Update user book list
+        const updatedBooks = books.filter((book) => book.id !== deletedBookId);
+        setBooks(updatedBooks);
+        setNumberOfBooks(updatedBooks.length); // Update number of books
       })
       .catch((error) => console.error("Error deleting book:", error));
   };
+
   const handleListClick = () => {
     if (listClicked) {
       setListClicked(false);
     } else {
       setListClicked(true);
     }
-    // window.location.reload();
   };
-  console.log(listClicked);
+
+  //UI
   return (
     <>
       {/* new book added*/}
@@ -79,13 +80,14 @@ const List = ({ newBook }) => {
           <div className="section_title">
             <h2 className="section_title_text">Aktualnie dodana książka:</h2>
           </div>
-          <div className="section_box">
+          <div className="section_box cover-button-relative">
+            <div className="cover-button"></div>
             <Book book={newBook} />
           </div>
         </div>
       </section>
-      {/*  user book list*/}
 
+      {/*  user book list*/}
       {listClicked ? (
         <section className="user_book_list-clicked">
           <div className="wrapper section_wrapper">
