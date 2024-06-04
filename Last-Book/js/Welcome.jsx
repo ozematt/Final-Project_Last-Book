@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 const Welcome = ({ onName }) => {
   ////DATA
-
   const [nameEntered, setNameEntered] = useState("");
   const [error, setError] = useState("");
   const [loginClicked, setLoginClicked] = useState(false);
@@ -39,7 +38,12 @@ const Welcome = ({ onName }) => {
         body: JSON.stringify(newUser),
         headers: { "Content-Type": "application/json" },
       })
-        .then((res) => res.json())
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
         .then((createdUser) => {
           const updatedUsers = [...userData, createdUser];
           localStorage.setItem("users", JSON.stringify(updatedUsers));

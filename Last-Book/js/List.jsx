@@ -17,11 +17,21 @@ const List = ({ newBook }) => {
     if (userId) {
       // Fetch user data
       fetch(`${API}/users/${userId}`)
-        .then((response) => response.json())
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
         .then((user) => {
           // Fetch books data
           fetch(`${API}/books`)
-            .then((response) => response.json())
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              return response.json();
+            })
             .then((allBooks) => {
               // Filter books by userId
               const userBooks = allBooks.filter(

@@ -9,7 +9,6 @@ const LoginLayout = () => {
   const navigate = useNavigate();
 
   const users = JSON.parse(localStorage.getItem("users"));
-  console.log(users);
 
   //LOGIC
   const handleSubmit = (event) => {
@@ -27,7 +26,6 @@ const LoginLayout = () => {
       return;
     }
     const selectedUserId = selectedUser.id;
-    console.log(selectedUserId);
 
     // login to local storage
     const newUser = {
@@ -35,7 +33,7 @@ const LoginLayout = () => {
       id: selectedUserId,
     };
     const userJSON = JSON.stringify(newUser);
-    console.log(userJSON);
+
     localStorage.setItem("currentUser", userJSON);
     navigate(`/users/${selectedUserId}`);
 
@@ -67,8 +65,6 @@ const LoginLayout = () => {
           </form>
 
           <span className="user_login-error">{error}</span>
-
-          {/*<span>{error}</span>*/}
         </div>
       </div>
     </section>

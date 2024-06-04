@@ -131,6 +131,10 @@
     {
       "id": "a3b1",
       "username": "Arrr"
+    },
+    {
+      "id": "b3b3",
+      "username": "Bartek"
     }
   ],
   "books": [
@@ -1002,6 +1006,22 @@
         "date": ""
       },
       "userId": "0874"
+    },
+    {
+      "id": "1833",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": "J.K. Rowling",
+        "rating": "10",
+        "have": true,
+        "cover": "http://books.google.com/books/content?id=wA8bDQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "b3b3"
     }
   ],
   "userBooks": []

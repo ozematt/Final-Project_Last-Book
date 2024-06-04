@@ -22,7 +22,7 @@ const AddBook = () => {
     },
     userId: "",
   });
-  console.log(book);
+
   //borrowed-section
   const [borrowedClick, setBorrowedClick] = useState(false);
   const [borrowedName, setBorrowedName] = useState("");
@@ -75,7 +75,7 @@ const AddBook = () => {
       fetch(`${API}${value}`)
         .then((response) => {
           if (!response.ok) {
-            throw new Error("Błąd pobierania danych");
+            throw new Error(`HTTP error! status: ${response.status}`);
           }
           return response.json();
         })
@@ -109,7 +109,7 @@ const AddBook = () => {
           }
         })
         .catch((error) => {
-          console.error("Błąd podczas wyszukiwania książki:", error);
+          console.error("Error while searching for the book:", error);
         });
     }, 2000);
   };
@@ -129,7 +129,7 @@ const AddBook = () => {
     e.preventDefault();
 
     if (!currentUser) {
-      console.error("Brak zalogowanego użytkownika!");
+      console.error("No user logged in!");
       return;
     }
     const newBook = {
@@ -157,9 +157,14 @@ const AddBook = () => {
     };
 
     fetch(`${API}/books`, requestOptions)
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => console.log(data))
-      .catch((error) => console.error("Błąd:", error));
+      .catch((error) => console.error("Error:", error));
     setBook((prevState) => ({ ...prevState, ...newBook }));
 
     //object book clean

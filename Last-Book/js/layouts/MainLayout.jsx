@@ -10,8 +10,9 @@ const MainLayout = () => {
     return currentUser ? currentUser.username : "Name";
   });
   const [loggedIn, setLoggedIn] = useState(false);
-
+  //counter
   const { setNumberOfBooks } = useNumberOfBooks();
+
   ////LOGIC
   const handledNameChange = (name) => {
     setUserName(name);
