@@ -43,18 +43,18 @@ Aby zainstalować projekt, wykonaj poniższe kroki:
 
 Dodaj plik `vite.config.js` w katalogu głównym projektu z następującą zawartością, aby Vite uruchamiał się na porcie 3001:
 
-```javascript
-// vite.config.js
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+   ```javascript
+   // vite.config.js
+   import { defineConfig } from 'vite';
+   import react from '@vitejs/plugin-react';
 
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 3001
-  }
-});
-```
+   export default defineConfig({
+     plugins: [react()],
+     server: {
+       port: 3001
+     }
+   });
+   ```
 
 ### Uruchomienie
 
@@ -131,45 +131,47 @@ Aby użyć projektu, wykonaj poniższe kroki:
 
 ### Struktura katalogów
 
-```
-Final-Project_Last-Book/
-├── assets/
-│   └── avatar.svg
-├── js/
-│   ├── api/
-│   │   ├── constans.js
-│   │   ├── db.json
-│   │   └── operation.js
-│   ├── layouts/
-│   │   ├── LoginLayout.jsx
-│   │   ├── MainLayout.jsx
-│   │   └── UserLayout.jsx
-│   ├── AddBook.jsx
-│   ├── app.jsx
-│   ├── Book.jsx
-│   ├── List.jsx
-│   ├── NumberOfBookContext.jsx
-│   └── Welcome.jsx
-├── scss/  
-│   ├── elements/
-│   │   ├── _addBook.scss
-│   │   ├── _base.scss
-│   │   ├── _book.scss
-│   │   ├── _list.scss
-│   │   └── _nav.scss
-│   ├── generic/
-│   │   ├── _functions.scss
-│   │   └── _variables.scss
-│   ├── layout/
-│   │   ├── _login-view.scss
-│   │   └── _welcome-view.scss
-│   ├── settings/
-│   │   └── _normalize.scss
-│   └── main.scss
-├── .gitignore
-├── index.html
-├── package.json
-├── README.md
-└── vite.config.js
+        Final-Project_Last-Book/
+        ├── assets/
+        │   └── avatar.svg
+        ├── js/
+        │   ├── api/
+        │   │   ├── constans.js
+        │   │   ├── db.json
+        │   │   └── operation.js
+        │   ├── layouts/
+        │   │   ├── LoginLayout.jsx
+        │   │   ├── MainLayout.jsx
+        │   │   └── UserLayout.jsx
+        │   ├── AddBook.jsx
+        │   ├── app.jsx
+        │   ├── Book.jsx
+        │   ├── List.jsx
+        │   ├── NumberOfBookContext.jsx
+        │   └── Welcome.jsx
+        ├── scss/  
+        │   ├── elements/
+        │   │   ├── _addBook.scss
+        │   │   ├── _base.scss
+        │   │   ├── _book.scss
+        │   │   ├── _list.scss
+        │   │   └── _nav.scss
+        │   ├── generic/
+        │   │   ├── _functions.scss
+        │   │   └── _variables.scss
+        │   ├── layout/
+        │   │   ├── _login-view.scss
+        │   │   └── _welcome-view.scss
+        │   ├── settings/
+        │   │   └── _normalize.scss
+        │   └── main.scss
+        ├── .gitignore
+        ├── index.html
+        ├── package.json
+        ├── README.md
+        └── vite.config.js
 
-```
+
+### Autor
+
+Mateusz Obirek
