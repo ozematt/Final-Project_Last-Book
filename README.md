@@ -130,3 +130,46 @@ Aby użyć projektu, wykonaj poniższe kroki:
    Po znalezieniu książki, kliknij przycisk "Dodaj do listy", aby dodać ją do listy przeczytanych książek. Możesz również zaznaczyć, czy posiadasz książkę oraz czy pożyczyłeś ją komuś.
 
 ### Struktura katalogów
+
+```
+Final-Project_Last-Book/
+├── assets/
+│   └── avatar.svg
+├── js/
+│   ├── api/
+│   │   ├── constans.js
+│   │   ├── db.json
+│   │   └── operation.js
+│   ├── layouts/
+│   │   ├── LoginLayout.jsx
+│   │   ├── MainLayout.jsx
+│   │   └── UserLayout.jsx
+│   ├── AddBook.jsx
+│   ├── app.jsx
+│   ├── Book.jsx
+│   ├── List.jsx
+│   ├── NumberOfBookContext.jsx
+│   └── Welcome.jsx
+├── scss/  
+│   ├── elements/
+│   │   ├── _addBook.scss
+│   │   ├── _base.scss
+│   │   ├── _book.scss
+│   │   ├── _list.scss
+│   │   └── _nav.scss
+│   ├── generic/
+│   │   ├── _functions.scss
+│   │   └── _variables.scss
+│   ├── layout/
+│   │   ├── _login-view.scss
+│   │   └── _welcome-view.scss
+│   ├── settings/
+│   │   └── _normalize.scss
+│   └── main.scss
+├── .gitignore
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
+
+```
