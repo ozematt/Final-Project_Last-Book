@@ -1022,6 +1022,22 @@
         "date": ""
       },
       "userId": "b3b3"
+    },
+    {
+      "id": "b7fc",
+      "bookData": {
+        "title": "Harry Potter i Zakon Feniksa",
+        "authors": "J. K. Rowling",
+        "rating": 0,
+        "have": false,
+        "cover": "http://books.google.com/books/content?id=aLv9wgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+      },
+      "borrowed": {
+        "borrowedStan": false,
+        "name": "",
+        "date": ""
+      },
+      "userId": "0874"
     }
   ],
   "userBooks": []

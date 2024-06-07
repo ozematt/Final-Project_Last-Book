@@ -10,9 +10,9 @@ const exercisePath = "Last-Book";
  * Don't change those lines below
  */
 export default defineConfig({
-    root: exercisePath,
-    server: {
-        port: 3000,
-    },
-    plugins: [react()],
+  root: exercisePath,
+  server: {
+    port: 3001,
+  },
+  plugins: [react()],
 });
