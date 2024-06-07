@@ -96,9 +96,10 @@ Aby uruchomić projekt, wykonaj poniższe kroki:
     ```
      Domyślnie serwer będzie działał na porcie 3000. Możesz teraz uzyskać dostęp do zasobów za pośrednictwem przeglądarki lub narzędzi takich jak Postman.
       
-      - `http://localhost:3000/books`
-      - `http://localhost:3000/users`
-
+      ```
+      http://localhost:3000/books
+      http://localhost:3000/users
+      ```
 
 2. **Uruchom aplikację React za pomocą Vite:**
    Uruchom poniższą komendę, aby uruchomić aplikację React na porcie 3001:
@@ -120,8 +121,10 @@ Aby użyć projektu, wykonaj poniższe kroki:
 2. **Tworzenie użytkownika:**
    W aplikacji możesz utworzyć nowego użytkownika, aby móc zarządzać swoimi książkami.
 
+
 3. **Wyszukiwanie książek:**
    Skorzystaj z interfejsu aplikacji, aby wyszukiwać książki za pomocą API Google Books. Wprowadź tytuł książki w polu wyszukiwania i kliknij przycisk "Szukaj".
+
 
 4. **Dodawanie książek do listy:**
    Po znalezieniu książki, kliknij przycisk "Dodaj do listy", aby dodać ją do listy przeczytanych książek. Możesz również zaznaczyć, czy posiadasz książkę oraz czy pożyczyłeś ją komuś.
