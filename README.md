@@ -2,7 +2,7 @@
 
 ## Wprowadzenie
 
-To jest przykładowy plik README dla mojego projektu, który jest aplikacją opartą na bibliotece React. Projekt wykorzystuje preprocesor SASS do stylizacji oraz API Google Books do wyszukiwania książek. Aplikacja pozwala na tworzenie listy przeczytanych książek oraz wyszukiwanie i dodawanie nowych książek do tej listy.
+To jest plik README dla mojego projektu, który jest aplikacją opartą na bibliotece React. Projekt wykorzystuje preprocesor SASS do stylizacji oraz API Google Books do wyszukiwania książek. Aplikacja pozwala na tworzenie listy przeczytanych książek oraz wyszukiwanie i dodawanie nowych książek do tej listy.
 
 ### Funkcje
 
@@ -41,9 +41,10 @@ Aby zainstalować projekt, wykonaj poniższe kroki:
     ```
 ### Konfiguracja
 
-Dodaj plik `vite.config.js` w katalogu głównym projektu z następującą zawartością, aby Vite uruchamiał się na porcie 3001:
+1. **Dodaj plik `vite.config.js` w katalogu głównym projektu z następującą zawartością, aby Vite uruchamiał się na porcie 3001:**
 
-   ```javascript
+
+`````javascript
    // vite.config.js
    import { defineConfig } from 'vite';
    import react from '@vitejs/plugin-react';
@@ -54,7 +55,7 @@ Dodaj plik `vite.config.js` w katalogu głównym projektu z następującą zawar
        port: 3001
      }
    });
-   ```
+`````
 
 ### Uruchomienie
 
@@ -131,6 +132,7 @@ Aby użyć projektu, wykonaj poniższe kroki:
 
 ### Struktura katalogów
 
+        
         Final-Project_Last-Book/
         ├── assets/
         │   └── avatar.svg
@@ -170,7 +172,7 @@ Aby użyć projektu, wykonaj poniższe kroki:
         ├── package.json
         ├── README.md
         └── vite.config.js
-
+       
 
 ### Autor
 
