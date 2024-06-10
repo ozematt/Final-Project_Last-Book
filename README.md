@@ -61,7 +61,7 @@ Aby zainstalować projekt, wykonaj poniższe kroki:
 
 Aby uruchomić projekt, wykonaj poniższe kroki:
 
-1. **Uruchom JSON Server:**
+1. **Utwórz plik `db.json`:**
    JSON Server używa pliku `db.json` jako swojej bazy danych. Utwórz plik `db.json` w katalogu głównym projektu, jeśli jeszcze go nie masz.
     ```json
     {
@@ -91,23 +91,24 @@ Aby uruchomić projekt, wykonaj poniższe kroki:
       ]
     }
     ```
-   Uruchom JSON Server:
+2. **Uruchom JSON Server:**
+   Następnie, w terminalu przejdź do katalogu, w którym znajduje się plik db.json i uruchom JSON Server:
     ```sh
     json-server --watch db.json
     ```
-     Domyślnie serwer będzie działał na porcie 3000. Możesz teraz uzyskać dostęp do zasobów za pośrednictwem przeglądarki lub narzędzi takich jak Postman.
-      
-      ```
-      http://localhost:3000/books
-      http://localhost:3000/users
-      ```
+   Domyślnie serwer będzie działał na porcie 3000. Możesz teraz uzyskać dostęp do zasobów za pośrednictwem przeglądarki lub narzędzi takich jak Postman.
+   ```
+    http://localhost:3000/books
+    http://localhost:3000/users
+   ```
 
-2. **Uruchom aplikację React za pomocą Vite:**
+3. **Uruchom aplikację React za pomocą Vite:**
    Uruchom poniższą komendę, aby uruchomić aplikację React na porcie 3001:
     ```sh
     npm run dev
     ```
    Domyślnie aplikacja będzie działać na porcie 3001.
+
 
 ### Użycie
 
@@ -122,10 +123,8 @@ Aby użyć projektu, wykonaj poniższe kroki:
 2. **Tworzenie użytkownika:**
    W aplikacji możesz utworzyć nowego użytkownika, aby móc zarządzać swoimi książkami.
 
-
 3. **Wyszukiwanie książek:**
    Skorzystaj z interfejsu aplikacji, aby wyszukiwać książki za pomocą API Google Books. Wprowadź tytuł książki w polu wyszukiwania i kliknij przycisk "Szukaj".
-
 
 4. **Dodawanie książek do listy:**
    Po znalezieniu książki, kliknij przycisk "Dodaj do listy", aby dodać ją do listy przeczytanych książek. Możesz również zaznaczyć, czy posiadasz książkę oraz czy pożyczyłeś ją komuś.
