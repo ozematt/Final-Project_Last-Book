@@ -2,7 +2,7 @@
 
 ## Wprowadzenie
 
-To jest plik README dla mojego projektu, który jest aplikacją opartą na bibliotece React. Projekt wykorzystuje preprocesor SASS do stylizacji oraz API Google Books do wyszukiwania książek. Aplikacja pozwala na tworzenie listy przeczytanych książek oraz wyszukiwanie i dodawanie nowych książek do tej listy.
+To jest plik README dla projektu, który jest aplikacją opartą na bibliotece React. Projekt wykorzystuje preprocesor SASS do stylizacji oraz API Google Books do wyszukiwania książek. Aplikacja pozwala na tworzenie listy przeczytanych książek oraz wyszukiwanie i dodawanie nowych książek do tej listy.
 
 ### Funkcje
 
