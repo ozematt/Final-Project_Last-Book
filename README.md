@@ -15,7 +15,7 @@ To jest plik README dla projektu, który jest aplikacją opartą na bibliotece R
 
 ### Instalacja
 
-Aby zainstalować projekt, wykonaj poniższe kroki:
+Aby zainstalować projekt, wykonaj następujące kroki:
 
 1. **Sklonuj repozytorium:**
     ```sh
