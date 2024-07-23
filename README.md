@@ -6,7 +6,7 @@ To jest plik README dla projektu, który jest aplikacją opartą na bibliotece R
 
 ### Funkcje
 
-- **Tworzenie listy przeczytanych książek**: Możliwość dodawania, edycji i usuwania książek z listy.
+- **Tworzenie listy przeczytanych książek**: Możliwość dodania, edycji i usuwania książek z listy.
 - **Wyszukiwanie książek**: Integracja z API Google Books umożliwiająca wyszukiwanie książek i dodawanie ich do listy.
 - **Zarządzanie użytkownikami**: Możliwość tworzenia użytkowników w aplikacji.
 - **Oznaczanie książek**: Użytkownicy mogą oznaczać, czy posiadają książki oraz czy pożyczyli je komuś.
